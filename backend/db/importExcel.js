@@ -2,12 +2,7 @@ import xlsx from "xlsx";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
-
-// const DB_PATH =
-//   "mongodb+srv://root:Ravi511104%40@learing.5i39vit.mongodb.net/SIH_2025?retryWrites=true&w=majority&appName=Learing";
-
 const DB_PATH = process.env.MONGO_URI;
-
 const namasteSchema = new mongoose.Schema({
   id: Number,
   NAMC_CODE: String,
